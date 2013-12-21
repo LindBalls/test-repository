@@ -8,13 +8,35 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script> 
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>			
+	<body>	
+		
+	<style>
+	#img-logo {z-index: 1000; width: 218px; margin: 100px auto; height: 156px;}
+	/* temporary styles go here. plug into style.css when you're done. */
+	
+	
+	.services {
+		width: 50%;
+		margin: 285px auto;
+		position: relative;
+		z-index: 900;
+	}
+	
+	</style>	
+		
+		
+				
 	<!--<div id="appModeNote">-->
-				<header class="left">
+		<img id="img-logo" class="on" src="images/logo.png">
+		<!--  unused text  // delete if you aren't going to render
+			<header class="left">
 				<h1>Nathan Lindblad</h1>
 				<h2>Designer and Developer</h2>
 				<h2 class="bio"></h2>
-		</header>
+			</header>
+		-->	
+			
+			
 		<ul class="services">
 			<li>
 				<a class="hidden" href="https://twitter.com/three23">
@@ -54,11 +76,14 @@
 			</li>
 			
 		</ul>
+		
 		<img id="img" class="bodyBackground" src="images/bgnate.jpg">
 	</body>
+	
 	<script>
 		setTimeout(function() {
 			document.getElementById('img').className = 'on';
+			document.getElementById('img-logo').className = 'on';
 		
 			var services = document.getElementsByClassName('hidden') || false;
 			var i = 0;
@@ -70,7 +95,7 @@
 				}
 			}, 1500 / services.length);
 		}, 400);
-	</script>		
+	</script>	
 </html>
 
 
