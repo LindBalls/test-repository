@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Lindles</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script> 
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>			
+	<!--<div id="appModeNote">-->
+				<header class="left">
+				<h1>Nathan Lindblad</h1>
+				<h2>Designer and Developer</h2>
+				<h2 class="bio"></h2>
+		</header>
+		<ul class="services">
+			<li>
+				<a class="hidden" href="https://twitter.com/three23">
+					<img src="images/twitter.png" alt="Logo for Twitter">
+				</a>
+			</li>
+					<li>
+				<a class="hidden" href="http://dribbble.com/three23">
+					<img src="images/dribbble.png" alt="Logo for Dribbble">
+				</a>
+			</li>
+			<li>
+				<a class="hidden" href="mailto:caleb@three23.net">
+					<img src="images/email.png" alt="Logo for Email">
+				</a>
+			</li>
+					<li>
+				<a class="hidden" href="">
+					<img src="images/aim.png" alt="Logo for AIM">
+				</a>
+			</li>
+			<li>
+				<a class="hidden" href="">
+					<img src="images/skype.png" alt="Logo for Skype">
+				</a>
+			</li>
+					<li>
+				<a class="hidden" href="http://linkedin.com/in/three23/">
+					<img src="images/linkedin.png" alt="Logo for LinkedIn">
+				</a>
+			</li>
+			<li>
+			<li>
+				<a class="hidden" href="http://instagram.com/three23">
+					<img src="images/instagram.png" alt="Logo for Instagram">
+				</a>
+			</li>
+			
+		</ul>
+		<img id="img" class="bodyBackground" src="images/bgnate.jpg">
+	</body>
+	<script>
+		setTimeout(function() {
+			document.getElementById('img').className = 'on';
+		
+			var services = document.getElementsByClassName('hidden') || false;
+			var i = 0;
+			var interval = setInterval(function() {
+				if(services[i]) {
+					services[i].className = '' && i++;
+				} else {
+					clearInterval(interval);
+				}
+			}, 1500 / services.length);
+		}, 400);
+	</script>		
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
